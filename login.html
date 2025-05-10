@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration page</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="dashboard.html" class="logo">Allure Mode</a>
+               
+
+                <div class="header-icons">
+                    <a href="validation.html" class="regis-profile">
+                        <img src="images/user.png" alt="Профиль" class="profile-icon">
+                        <span class="regis_signin">Регистрация</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <form class="form" id="loginForm">
+        <h2>Войти</h2>
+
+        <input type="email" id="email" placeholder="Email" required>
+        <div class="error" id="emailError"></div>
+
+        <input type="password" id="password" placeholder="Пароль" required>
+        <div id="strengthIndicator"></div>
+        <div class="error" id="passwordError"></div>
+
+        <button type="submit" id="loginBtn">Войти</button>
+    </form>
+
+    <footer>
+        <p>&copy; 2025 Allure Mode. Все права защищены.</p>
+    </footer>
+
+    <script src="login.js"></script>
+</body>
+</html>

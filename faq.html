@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="faq.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="dashboard.html" class="logo">Allure Mode</a>
+                <ul class="menu">
+                    <li><a href="#main">Главная</a></li>
+                    <li><a href="#woman">Женское</a></li>
+                    <li><a href="#man">Мужское</a></li>
+                    <li><a href="#accessories">Аксессуары</a></li>
+                    <li><a href="#shoes">Обувь</a></li>
+                    <li><a href="#services">Сервисы</a></li>
+                </ul>
+
+                <div class="header-icons">
+                  <div class="search">
+                    <input type="text" id="search_items" placeholder="Поиск"> 
+                    <button id="find"><img src="images/Search.svg" class="search-icon"></button>
+                  </div>
+
+                    <a href="#" class="location" id="open">
+                        <img src="images/location.png" alt="Город" class="location-icon">
+                        <span class="city-name">Алматы</span>
+                    </a>
+
+                    <div class="city-modal" id="city_modal">
+                        <div class="city-modal-content">
+                            <span class="close-btn" id="close">&times;</span>
+                            <h3>Выбор города</h3>
+                            <ul id="city_list">
+                                <li>Алматы</li>
+                                <li>Астана</li>
+                                <li>Шымкент</li>
+                                <li>Караганда</li>
+                                <li>Актау</li>
+                                <li>Атырау</li>
+                                <li>Кызылорда</li>
+                                <li>Костанай</li>
+                                <li>Талдыкорган</li>
+                                <li>Туркестан</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <a href="basket.html" class="basket">
+                        <img src="images/shopping-bag.png" alt="Корзина" class="basket-icon">
+                        <span class="basket_numb">0</span>
+                    </a>
+                      <a href="validation.html" class="regis-profile">
+                        <span class="regis_signin">Вход|Регистрация</span>
+                    </a>
+                    <a href="profile.html" class="regis-profile">
+                      <img src="images/user.png" alt="Профиль" class="profile-icon">
+                  </a>
+                  </div>
+              </div>
+          </nav>
+      </header>
+    <main>
+    <h2>ЧАСТЫЕ ВОПРОСЫ (FAQ)</h2>
+    <div class="faq-container">
+        <button class="accordion">Я ХОЧУ СДЕЛАТЬ ВОЗВРАТ ТОВАРА?</button>
+        <div class="panel">
+          <p><strong>Просим связаться с менеджером</strong></p>
+          <p>Перейдите в WhatsApp (правый верхний угол Главной страницы)<br>
+            Напишите номер заказа или артикул Товара и укажите причину возврата<br>
+            С Вами свяжется менеджер.</p>
+          <p><strong>К возврату принимается товар:</strong></p>
+          <ul>
+            <li>С этикеткой на фирменной пломбе,</li>
+            <li>Сохранена фирменная упаковка, коробка (для обуви)</li>
+            <li>Товар без посторонних запахов и признаков ношения, а также следов химчистки,</li>
+            <li>С накладной или чеком об оплате за Товар.</li>
+            <li>Доставка до Продавца осуществляется за счет Покупателя.</li>
+          </ul>
+          <p><strong>Не подлежит Возврату:</strong></p>
+          <ul>
+            <li>Парфюмерно-косметические товары,</li>
+            <li>Чулочно-носочные изделия,</li>
+            <li>Нижнее белье и купальники.</li>
+          </ul>
+        </div>
+        
+        <button class="accordion">КАКОЙ СРОК ДОСТАВКИ ТОВАРА?</button>
+        <div class="panel">
+          <p>Доставка по Казахстану занимает от 3 до 7 рабочих дней в зависимости от региона.</p>
+          <p>Международная доставка — от 7 до 14 рабочих дней.</p>
+        </div>
+        
+        <button class="accordion">КАК Я МОГУ ОТСЛЕДИТЬ МОЙ ЗАКАЗ?</button>
+        <div class="panel">
+          <p>После отправки заказа Вы получите трек-номер на Вашу почту или в WhatsApp.</p>
+          <p>Перейдите на сайт транспортной компании и введите трек-номер для отслеживания.</p>
+        </div>
+        
+        <button class="accordion">ВОЗМОЖНО ЛИ ОПЛАТИТЬ ТОВАР В РАССРОЧКУ?</button>
+        <div class="panel">
+          <p>Да, Вы можете оплатить товар в рассрочку через сервисы Kaspi Red, Kaspi рассрочка или другие доступные варианты в Вашем регионе.</p>
+          <p>При оформлении заказа выберите способ оплаты "Рассрочка".</p>
+        </div>
+        
+        <button class="accordion">КАКИЕ ЕЩЕ ИМЕЮТСЯ СПОСОБЫ ОПЛАТЫ?</button>
+        <div class="panel">
+          <p>Мы принимаем следующие способы оплаты:</p>
+          <ul>
+            <li>Kaspi QR и Kaspi перевод</li>
+            <li>Оплата картами Visa и MasterCard</li>
+            <li>Электронные кошельки (если доступны)</li>
+            <li>Рассрочка через Kaspi и Halyk Bank</li>
+          </ul>
+        </div>
+        <button class="accordion">КАК Я УЗНАЮ ЧТО ТОВАР ОПЛАЧЕН?</button>
+        <div class="panel">
+          <p>После успешной оплаты Вы получите подтверждение на WhatsApp или на электронную почту.</p>
+          <p>Также статус Вашего заказа изменится на "Оплачен" в личном кабинете сайта.</p>
+        </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Allure Mode. Все права защищены.</p>
+        </footer>
+      <script src="faq.js"></script>
+</body>
+</html>
+    

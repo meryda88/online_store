@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="services.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="dashboard.html" class="logo">Allure Mode</a>
+                <ul class="menu">
+                    <li><a href="#main">Главная</a></li>
+                    <li><a href="#woman">Женское</a></li>
+                    <li><a href="#man">Мужское</a></li>
+                    <li><a href="#accessories">Аксессуары</a></li>
+                    <li><a href="#shoes">Обувь</a></li>
+                    <li><a href="#services">Сервисы</a></li>
+                </ul>
+
+                <div class="header-icons">
+                  <div class="search">
+                    <input type="text" id="search_items" placeholder="Поиск"> 
+                    <button id="find"><img src="images/Search.svg" class="search-icon"></button>
+                  </div>
+
+                    <a href="#" class="location" id="open">
+                        <img src="images/location.png" alt="Город" class="location-icon">
+                        <span class="city-name">Алматы</span>
+                    </a>
+
+                    <div class="city-modal" id="city_modal">
+                        <div class="city-modal-content">
+                            <span class="close-btn" id="close">&times;</span>
+                            <h3>Выбор города</h3>
+                            <ul id="city_list">
+                                <li>Алматы</li>
+                                <li>Астана</li>
+                                <li>Шымкент</li>
+                                <li>Караганда</li>
+                                <li>Актау</li>
+                                <li>Атырау</li>
+                                <li>Кызылорда</li>
+                                <li>Костанай</li>
+                                <li>Талдыкорган</li>
+                                <li>Туркестан</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <a href="basket.html" class="basket">
+                      <img src="images/shopping-bag.png" alt="Корзина" class="basket-icon">
+                      <span class="basket_numb">0</span>
+                  </a>
+                    <a href="validation.html" class="regis-profile">
+                      <span class="regis_signin">Вход|Регистрация</span>
+                  </a>
+                  <a href="profile.html" class="regis-profile">
+                    <img src="images/user.png" alt="Профиль" class="profile-icon">
+                </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+  <main id="main">
+    <div class="image">
+        <img src="https://i.pinimg.com/736x/1d/26/4c/1d264c988391a6b743cfbd299b381170.jpg" alt="" class="img1">
+        <img src="images/png-serv.jfif" alt="" class="img2">
+    </div>
+    <div class="services">
+    <div class="service">
+      <a href="faq.html">
+        <img src="images/help.png" alt="">
+        <h1>FAQ</h1>
+        <p>Часто задаваемые вопросы</p>
+      </a>
+    </div>
+    <div class="service">
+      <a href="service2.html">
+        <img src="images/delivery-status.png" alt="">
+      <h1>ВОЗВРАТ / ОБМЕН</h1>
+      <p>Условия возврата и обмена</p>
+      </a>
+  </div>
+  <div class="service">
+    <a href="service3.html">
+      <img src="images/delivery-truck.png" alt="">
+        <h1>ОПЛАТА И ДОСТАВКА</h1>
+        <p>Условия по оплате и доставке товара</p>
+    </a>
+    </div>
+    <div class="service">
+      <a href="sales.html">
+        <img src="images/data-analytics.png" alt="">
+        <h1>Аналитика сайта</h1>
+        <p>Результаты проведенного анализа</p>
+      </a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <p>&copy; 2025 Allure Mode. Все права защищены.</p>
+</footer>
+      
+</body>
+</html>

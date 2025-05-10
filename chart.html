@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <!-- <h1 id="title">Jquery</h1>
+    <button id="btn1">нажать</button>
+    <button id="btn2">click</button> -->
+    <canvas id="chart"></canvas>
+    <style>
+        img {
+            width: 500px;
+            height: 500px;
+        }
+        .swiper {
+            width: 500px;
+            height: 500px;
+        }
+        .swiper-button-next, 
+        .swiper-button-prev {
+            color: white;
+        }
+
+    </style>
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"> <img src="https://static.vecteezy.com/vite/assets/photo-masthead-375-BoK_p8LG.webp" alt=""></div>
+            <div class="swiper-slide"> <img src="https://st3.depositphotos.com/9264440/19343/i/450/depositphotos_193438844-stock-photo-sunrise-frozen-lake-tornetrask-lapland.jpg" alt=""></div>
+            <div class="swiper-slide"> <img src="https://st2.depositphotos.com/1009050/44072/i/450/depositphotos_440723190-stock-photo-nice-sunset-lake-water-surface.jpg" alt=""></div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    <script src="chart.js"></script>
+</body>
+</html>

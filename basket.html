@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allure Mode</title>
+    <link rel="stylesheet" href="basket.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="dashboard.html" class="logo">Allure Mode</a>
+                <ul class="menu">
+                    <li><a href="#main">Главная</a></li>
+                    <li><a href="#woman">Женское</a></li>
+                    <li><a href="#man">Мужское</a></li>
+                    <li><a href="#accessories">Аксессуары</a></li>
+                    <li><a href="#shoes">Обувь</a></li>
+                    <li><a href="#services">Сервисы</a></li>
+                </ul>
+
+                <div class="header-icons">
+                        <div class="search">
+                          <input type="text" id="search_items" placeholder="Поиск"> 
+                          <button id="find"><img src="images/Search.svg" class="search-icon"></button>
+                        </div>
+                    <a href="#" class="location">
+                        <img src="images/location.png" alt="Город" class="location-icon">
+                        <span class="city">Алматы</span>
+                    </a>
+                    </a>
+                      <a href="validation.html" class="regis-profile">
+                        <span class="regis_signin">Вход|Регистрация</span>
+                    </a>
+                    <a href="profile.html" class="regis-profile">
+                      <img src="images/user.png" alt="Профиль" class="profile-icon">
+                  </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="all_pages">
+    <main id="main">
+        <div class="basket-container">
+            <h1>Ваша корзина</h1>
+        
+            <div class="list_cart"></div>
+
+            <p>Общая сумма: <span id="total-price">0</span> ₸</p>
+            <p>Товаров в корзине: <span id="cart-count">0</span></p>
+        
+            <div class="btn">
+                <button class="close" onclick="window.location.href='dashboard.html'">Продолжить покупки</button>
+                <button class="checkout">Перейти к оплате</button>
+            </div>
+        </div>
+              
+</main>
+</div>
+<footer>
+    <p>&copy; 2025 Allure Mode. Все права защищены.</p>
+</footer>
+<script src="basket.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="sales.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="dashboard.html" class="logo">Allure Mode</a>
+                <ul class="menu">
+                    <li><a href="dashboard.html">Главная</a></li>
+                    <li><a href="dashboard.html">Женское</a></li>
+                    <li><a href="dashboard.html">Мужское</a></li>
+                    <li><a href="dashboard.html">Аксессуары</a></li>
+                    <li><a href="dashboard.html">Обувь</a></li>
+                    <li><a href="services.html">Сервисы</a></li>
+                </ul>
+
+                <div class="header-icons">
+                    <a href="#" class="location" id="open">
+                        <img src="images/location.png" alt="Город" class="location-icon">
+                        <span class="city-name">Алматы</span>
+                    </a>
+
+                    <div class="city-modal" id="city_modal">
+                        <div class="city-modal-content">
+                            <span class="close-btn" id="close">&times;</span>
+                            <h3>Выбор города</h3>
+                            <ul id="city_list">
+                                <li>Алматы</li>
+                                <li>Астана</li>
+                                <li>Шымкент</li>
+                                <li>Караганда</li>
+                                <li>Актау</li>
+                                <li>Атырау</li>
+                                <li>Кызылорда</li>
+                                <li>Костанай</li>
+                                <li>Талдыкорган</li>
+                                <li>Туркестан</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                      <a href="validation.html" class="regis-profile">
+                        <span class="regis_signin">Вход|Регистрация</span>
+                    </a>
+                    <a href="profile.html" class="regis-profile">
+                      <img src="images/user.png" alt="Профиль" class="profile-icon">
+                  </a>
+                  </div>
+              </div>
+          </nav>
+      </header>
+    <main>
+        <div id="chart1-container">
+            <h1 id="chart1_text">Ежедневная активность пользователей на платформе</h1>
+            <canvas id="chart1"></canvas>
+        </div>
+            <div id="chart2-container">
+            <h1 id="chart2_text">Распределение продаж по категориям одежды</h1>
+        <canvas id="chart2"></canvas>
+    </main>
+    <footer>
+        <p>&copy; 2025 Allure Mode. Все права защищены.</p>
+    </footer>
+    <script src="sales.js"></script>
+</body>
+</html>

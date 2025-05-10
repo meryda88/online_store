@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration page</title>
+    <link rel="stylesheet" href="validation.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="dashboard.html" class="logo">Allure Mode</a>
+               
+
+                <div class="header-icons">
+                    <a href="login.html" class="regis-profile">
+                        <img src="images/user.png" alt="Профиль" class="profile-icon">
+                        <span class="regis_signin">Вход</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <form class="form" id="registrationForm">
+        <h2>Регистрация</h2>
+
+        <input type="text" id="name" placeholder="ФИО" required>
+        <div class="error" id="nameError"></div>
+
+        <input type="email" id="email" placeholder="Email" required>
+        <div class="error" id="emailError"></div>
+
+        <input type="text" id="phone" placeholder="Номер телефона" required>
+        <div class="error" id="phoneError"></div>
+
+        <input type="password" id="password" placeholder="Пароль" required>
+        <div id="strengthIndicator"></div>
+        <div class="error" id="passwordError"></div>
+
+        <input type="password" id="confirmPassword" placeholder="Подтвердите пароль" required>
+        <div class="error" id="confirmPasswordError"></div>
+
+        <button type="submit" id="submitBtn" disabled>Зарегистрироваться</button>
+    </form>
+
+    <footer>
+      <p>&copy; 2025 Allure Mode. Все права защищены.</p>
+  </footer>
+
+    <script src="validation.js"></script>
+</body>
+</html>
